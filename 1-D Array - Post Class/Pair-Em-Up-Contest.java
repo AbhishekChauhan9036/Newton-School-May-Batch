@@ -5,18 +5,22 @@ import java.util.*; // contains Collections framework
 // you can add inner classes if needed
 class Main {
 	public static void main (String[] args) {
-        Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		long a[]=new long[n];
-		for(int i=0;i<n;i++){
-			a[i]=sc.nextLong();
-		}
+                      // Your code here
 
-		long sum=0;
-		for(int i=1;i<=n;i++){
-			sum+=((n-i)^a[i-1]);
+		int n;
+		Scanner sc = new Scanner(System.in);
+		n = sc.nextInt();
+		int a[] = new int[n];
+		for(int i=0;i<n;i++) {
+			a[i] = sc.nextInt();
 		}
-
-		System.out.print(sum);
+		Arrays.sort(a);
+		int maxi = -1;
+		for(int i=0; i<n; i++) {
+			int cur = a[i] + a[n-i-1];
+			if(maxi<cur)
+				maxi = cur;
+		}
+		System.out.println(maxi);
 	}
 }
