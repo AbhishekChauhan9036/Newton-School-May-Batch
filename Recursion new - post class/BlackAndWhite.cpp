@@ -5,9 +5,9 @@ long long numOfWays(int n, int m);
 
 int main() {
 
-    int T;
-    cin >> T;
-    while (T--) {
+    int t;
+    cin >> t;
+    while (t--) {
         int n, m;
         cin >> n >> m;
         cout << numOfWays(n, m) << endl;
