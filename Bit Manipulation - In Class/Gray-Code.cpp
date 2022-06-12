@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+//ls cd gpppp
 using namespace std;
 
 int greyConverter(int n) { return n ^ (n >> 1); }
