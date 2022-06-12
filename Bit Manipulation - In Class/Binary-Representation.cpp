@@ -14,5 +14,5 @@ int32_t main()
 	int n;
 	cin>>n;
 	Solve(n);
-
+	return 0;
 }
