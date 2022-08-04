@@ -1,5 +1,5 @@
 /*
-    int top=-1; // index of current top
+    int top=-1; // index of current top   ..
     int a[] // array which contain element of stack 
 */
 // function to add element in the stack
