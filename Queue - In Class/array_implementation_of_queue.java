@@ -1,5 +1,5 @@
 /*
-
+//...
   class Queue{ 
     static final int MAX = 10000; 
     int rear=0,front=0; 
